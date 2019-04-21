@@ -4,13 +4,13 @@ require_relative "../lib/advanced_jukebox"
 
 
 my_songs = {
-"Go Go GO" => 'Users/aaron/Development/jukebox-cli-nyc-web-051319/audio/Emerald-Park/01.mp3',
-"LiberTeens" => 'Users/aaron/Development/jukebox-cli-nyc-web-051319/audio/Emerald-Park/02.mp3',
-"Hamburg" =>  'Users/aaron/Development/jukebox-cli-nyc-web-051319/audio/Emerald-Park/03.mp3',
-"Guiding Light" => 'Users/aaron/Development/jukebox-cli-nyc-web-051319/audio/Emerald-Park/04.mp3',
-"Wolf" => 'Users/aaron/Development/jukebox-cli-nyc-web-051319/audio/Emerald-Park/05.mp3',
-"Blue" => 'Users/aaron/Development/jukebox-cli-nyc-web-051319/audio/Emerald-Park/06.mp3',
-"Graduation Failed" => 'Users/aaron/Development/jukebox-cli-nyc-web-051319/audio/Emerald-Park/07.mp3'
+"Go Go GO" => 'audio/Emerald-Park/01.mp3',
+"LiberTeens" => 'audio/Emerald-Park/02.mp3',
+"Hamburg" =>  'audio/Emerald-Park/03.mp3',
+"Guiding Light" => 'audio/Emerald-Park/04.mp3',
+"Wolf" => 'audio/Emerald-Park/05.mp3',
+"Blue" => 'audio/Emerald-Park/06.mp3',
+"Graduation Failed" => 'audio/Emerald-Park/07.mp3'
 }
 
 run(my_songs)
