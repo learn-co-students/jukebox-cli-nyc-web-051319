@@ -32,7 +32,16 @@ end
 
 
 def play(my_songs)
-
+  puts "Please enter a song name:"
+    users_response = gets.chomp
+if [1..9].to_a.include? (users_response.to_i) #only allows user to input song name
+        puts "Playing (#{songs}(users_response.to_i)"
+      elsif songs.include? (users_response)
+        puts "Playing #{songs}"
+      else
+      puts "Invalid input, please try again"
+    end
+  end
 
   #this method is slightly different!
   #you should still ask the user for input and collect their song choice
@@ -68,13 +77,4 @@ def run(my_songs)
       else
         help
     end
-  end
-end
-
-
-
-
-
-
-
 end
