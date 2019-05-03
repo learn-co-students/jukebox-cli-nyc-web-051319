@@ -38,6 +38,7 @@ if [1..9].to_a.include? (users_response.to_i) #only allows user to input song na
         puts "Playing (#{songs}(users_response.to_i)"
       elsif songs.include? (users_response)
         puts "Playing #{songs}"
+        open <file path>
       else
       puts "Invalid input, please try again"
     end
@@ -77,4 +78,5 @@ def run(my_songs)
       else
         help
     end
+  end
 end

@@ -29,7 +29,8 @@ def list(songs)
 def play(songs)
   puts "Please enter a song name or number:"
     users_response = gets.chomp
-if [1..9].to_a.include? (users_response.to_i)
+ if  users_response.to_i.between?(1,9)
+   #[1..9].to_a.include? (users_response.to_i) --  a range.to_a doesnt turn range into an array --  that's why  it was giving an  error
         puts "Playing (#{songs}(users_response.to_i)"
       elsif songs.include? (users_response)
         puts "Playing #{songs}"
@@ -51,14 +52,14 @@ def run(songs)
       puts "Please enter a command:"
       users_response = gets.strip
     case users_response
-             list(songs)
-     when  "play"
+          #   list(songs)   #case is like if else, list(songs) doesnt have function -- so when follows immideately
+     when "play"
               list(songs)
           play(songs)
      when "help"
             help
       when "exit"
-              exit_jukebox(exit)
+              exit_jukebox
           break
       else
         help
