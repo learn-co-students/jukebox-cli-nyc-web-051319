@@ -34,7 +34,7 @@ end
 def play(my_songs)
   puts "Please enter a song name:"
     users_response = gets.chomp
-if [1..9].to_a.include? (users_response.to_i) #only allows user to input song name
+if  #only allows user to input song name not number as prev. method 
         puts "Playing (#{songs}(users_response.to_i)"
       elsif songs.include? (users_response)
         puts "Playing #{songs}"
@@ -73,7 +73,7 @@ def run(my_songs)
      when "help"
             help
       when "exit"
-              exit_jukebox(exit)
+              exit_jukebox
           break
       else
         help
