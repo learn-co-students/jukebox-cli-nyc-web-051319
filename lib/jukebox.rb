@@ -1,5 +1,5 @@
 require 'pry'
-binding.pry
+# binding.pry
 # def say_hello(name)
 #   "Hi #{name}!"
 # end
@@ -52,8 +52,26 @@ elsif result == val
   puts "Playing #{val}"
 else
   puts "Invalid input, please try again"
-  binding.pry
+
+end
 end
 end
 
+def exit_jukebox
+  puts "Goodbye"
+end
+
+def run (arg)
+  help
+  puts "Please enter a command:"
+  result = gets.chomp
+  if result  == "list"
+  list()
+  elsif result == "play"
+  play()
+elsif result == "help"
+  help
+elsif result == "exit"
+  exit_jukebox
+end
 end
